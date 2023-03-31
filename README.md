@@ -1,5 +1,9 @@
 # One Piece Memory Game 🧠☠️
 
+### Link do jogo:
+
+https://ldavi05.github.io/One-Piece-Memory-Game/
+
 ### Regras 📃
 
 •Existem 20 cartas, em que 10 são diferentes
