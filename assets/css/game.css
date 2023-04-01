@@ -71,3 +71,53 @@ header {
   filter: saturate(0);
   opacity: 0.5;
 }
+
+.winning-message {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+}
+
+.winning-message-button {
+    font-size: 2.5rem;
+    background-color: #4994D0;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    color: white;
+}
+
+.winning-message-button:hover {
+    color: #4994D0;
+    background-color: white;
+}
+
+.winning-message-text {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.show-winning-message {
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .winning-message-button {
+    font-size: 1rem;
+  }
+  
+  .winning-message-text {
+    font-size: 1rem;
+  }
+}
