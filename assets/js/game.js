@@ -1,6 +1,8 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const winningMessage = document.querySelector('.winning-message');
+const winningMessageText = document.querySelector('.winning-message-text');
 
 const flags = [
   'brook',
@@ -30,7 +32,8 @@ const checkEndGame = () => {
   if(disabledCards.length == 20) {
     clearInterval(this.loop);
     setTimeout(() => {
-      alert(`Parabéns ${spanPlayer.innerHTML}! Você venceu o jogo em ${timer.innerHTML} segundos!`);
+      winningMessage.classList.add('show-winning-message');
+      winningMessageText.innerHTML = `Parabéns ${spanPlayer.innerHTML}! Você venceu o jogo em ${timer.innerHTML} segundos!`
     }, 500);
   }
 }
